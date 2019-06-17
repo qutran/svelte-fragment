@@ -10,7 +10,7 @@ let config;
 
 if (!production) {
   config = {
-    input: 'src/examples.js',
+    input: 'src/examples/simple/main.js',
     output: {
       sourcemap: true,
       format: 'iife',
