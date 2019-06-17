@@ -2,6 +2,10 @@
 
 Svelte action to use slots without DOM containers.
 
+## Installation:
+
+`npm i svelte-fragment`
+
 ## Usage:
 
 ```html
