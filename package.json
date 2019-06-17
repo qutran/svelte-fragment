@@ -5,6 +5,10 @@
   "module": "dist/es/index.mjs",
   "unpkg": "dist/es/index.mjs",
   "license": "MIT",
+  "author": "Dmitry Kutran <kutran.dmitry@gmail.com> (https://github.com/qutran)",
+  "homepage": "https://github.com/qutran/svelte-fragment",
+  "repository": "github:qutran/svelte-fragment",
+  "bugs": "https://github.com/qutran/svelte-fragment/issues",
   "description": "Svelte action to use slots without DOM containers",
   "keywords": [
     "svelte",
