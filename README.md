@@ -1,4 +1,4 @@
-# Svelte template action
+# Svelte fragment action
 
 Svelte action to use slots without DOM containers.
 
