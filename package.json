@@ -9,7 +9,7 @@
   "homepage": "https://github.com/qutran/svelte-fragment",
   "repository": "github:qutran/svelte-fragment",
   "bugs": "https://github.com/qutran/svelte-fragment/issues",
-  "description": "Svelte action to use slots without DOM containers",
+  "description": "Svelte action to render components and elements in slots without DOM containers",
   "keywords": [
     "svelte",
     "fragment"

@@ -1,6 +1,6 @@
 # Svelte fragment action
 
-Svelte action to use slots without DOM containers.
+Svelte action to render components and elements in slots without DOM containers.
 
 ## Installation:
 
