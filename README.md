@@ -22,3 +22,6 @@ Svelte action to render components and elements in slots without DOM containers.
   </template>
 </Wrapper>
 ```
+
+## TODO:
+1. Unit test
