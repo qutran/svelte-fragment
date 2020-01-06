@@ -4,7 +4,11 @@ export default function fragment(node) {
 
   return {
     destroy() {
-      if (node && node.parentElement) {
+      if (
+        node &&
+        node.parentElement &&
+        node.parentNode.contains(node.content)
+      ) {
         node.parentElement.removeChild(node.content);
       }
     },
