@@ -4,8 +4,21 @@ export default function fragment(node) {
 
   // As appening a fragment as node child remove its content, we need to save the
   // children references
-  const children = Array.prototype.slice.call(node.content.childNodes);
+  const children = Array.prototype.slice.call(
+    (node.content || node).childNodes,
+  );
 
+  // As the given node could not be a template tag we need to create a fragment
+  // for non template node
+  if (!node.content || node.content.nodeType !== 11) {
+    node.content = document.createDocumentFragment();
+
+    for (let i in children) {
+      node.content.appendChild(children[i]);
+    }
+  }
+
+  // By appending a fragment, its content will be spread inside the parrent
   parent.appendChild(node.content);
 
   // Svelte except an used node to have parent, so a fragment should adopt the node
