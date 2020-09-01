@@ -14,7 +14,7 @@ export default function fragment(node) {
     node.content = document.createDocumentFragment();
 
     for (let i in children) {
-      node.content.appendChild(children[i]);
+      node.content.appendChild(document.adoptNode(children[i]));
     }
   }
 
@@ -28,7 +28,7 @@ export default function fragment(node) {
     destroy() {
       // Node content fragment doesnt longer have the references to the children
       // so its content need to be removed reference by reference
-      requestAnimationFrame(function() {
+      requestAnimationFrame(function () {
         for (let i in children) {
           if (parent && parent.contains(children[i])) {
             parent.removeChild(children[i]);
